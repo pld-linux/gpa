@@ -12,7 +12,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRequires:	gpgme-devel >= 0.4.0
-BuildRequires:	gtk+2-devel >= 2.0.0
+BuildRequires:	gtk+2-devel >= 1:2.0.0
 BuildRequires:	pkgconfig
 Requires:	gnupg
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
