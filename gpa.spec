@@ -7,7 +7,7 @@ License:	GPL v2
 Group:		X11/Applications
 Source0:	ftp://ftp.gnupg.org/gcrypt/alpha/gpa/%{name}-%{version}.tar.gz
 # Source0-md5:	44cb60cba64a48837588ed27f8db08b2
-URL:		http://www.gnupg.org/
+URL:		http://www.gnupg.org/related_software/gpa/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
@@ -32,7 +32,6 @@ zarz±dzania zarówno publicznymi, jak i prywatnymi kluczami.
 %setup -q
 
 %build
-rm -f missing
 %{__gettextize}
 %{__aclocal}
 %{__autoconf}
@@ -45,7 +44,8 @@ rm -f missing
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %find_lang %{name}
 
