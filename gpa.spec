@@ -6,6 +6,7 @@ Release:	0.1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	ftp://ftp.gnupg.org/gcrypt/alpha/gpa/%{name}-%{version}.tar.gz
+# Source0-md5: 4dfae51609abfc19d036542f5305bfda
 URL:		http://www.gnupg.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
