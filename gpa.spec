@@ -1,18 +1,18 @@
 Summary:	Gnu Privacy Assistant - Graphical Frontend for the GnuPG
 Summary(pl):	Gnu Privacy Assistant - Graficzny Frontend GnuPG
 Name:		gpa
-Version:	0.7.0
-Release:	0.1
+Version:	0.7.1
+Release:	1
 License:	GPL v2
 Group:		X11/Applications
-Source0:	ftp://ftp.gnupg.org/gcrypt/alpha/gpa/%{name}-%{version}.tar.gz
-# Source0-md5:	44cb60cba64a48837588ed27f8db08b2
+Source0:	ftp://ftp.gnupg.org/gcrypt/alpha/gpa/%{name}-%{version}.tar.bz2
+# Source0-md5:	7cc2c8889b2e6a9f7c7145e99b17d83c
 URL:		http://www.gnupg.org/related_software/gpa/
-BuildRequires:	autoconf
-BuildRequires:	automake
+BuildRequires:	autoconf >= 2.59
+BuildRequires:	automake >= 1:1.9.3
 BuildRequires:	gettext-devel
-BuildRequires:	gpgme-devel >= 0.4.0
-BuildRequires:	gtk+2-devel >= 1:2.0.0
+BuildRequires:	gpgme-devel >= 1:1.1.1
+BuildRequires:	gtk+2-devel >= 2:2.2.0
 BuildRequires:	pkgconfig
 Requires:	gnupg
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -33,7 +33,7 @@ zarz±dzania zarówno publicznymi, jak i prywatnymi kluczami.
 
 %build
 %{__gettextize}
-%{__aclocal}
+%{__aclocal} -I m4
 %{__autoconf}
 %{__autoheader}
 %{__automake}
@@ -42,7 +42,6 @@ zarz±dzania zarówno publicznymi, jak i prywatnymi kluczami.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
@@ -57,3 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog README
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
+%{_desktopdir}/gpa.desktop
+%{_pixmapsdir}/gpa.png
