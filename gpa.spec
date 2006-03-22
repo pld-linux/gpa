@@ -10,7 +10,7 @@ Source0:	ftp://ftp.gnupg.org/gcrypt/alpha/gpa/%{name}-%{version}.tar.bz2
 URL:		http://www.gnupg.org/related_software/gpa/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.9.3
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-devel >= 0.12.1
 BuildRequires:	gpgme-devel >= 1:1.1.1
 BuildRequires:	gtk+2-devel >= 2:2.2.0
 BuildRequires:	pkgconfig
