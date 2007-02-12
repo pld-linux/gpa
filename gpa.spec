@@ -1,5 +1,5 @@
 Summary:	Gnu Privacy Assistant - Graphical Frontend for the GnuPG
-Summary(pl):	Gnu Privacy Assistant - Graficzny Frontend GnuPG
+Summary(pl.UTF-8):   Gnu Privacy Assistant - Graficzny Frontend GnuPG
 Name:		gpa
 Version:	0.7.3
 Release:	1
@@ -22,11 +22,11 @@ GPA (GNU Privacy Assistant) is a graphical frontend for the GNU
 Privacy Guard (GnuPG). GPA can be used to encrypt, decrypt and sign
 files, to verify signatures and to manage the private and public keys.
 
-%description -l pl
-GPA (GNU Privacy Assistant) jest graficzn± nak³adk± dla programu Gnu
-Privacy Guard (GnuPG). GPA mo¿e byæ u¿yte do szyfrowania,
-deszyfrowania i podpisywania plików, do weryfikacji podpisów, oraz do
-zarz±dzania zarówno publicznymi, jak i prywatnymi kluczami.
+%description -l pl.UTF-8
+GPA (GNU Privacy Assistant) jest graficznÄ… nakÅ‚adkÄ… dla programu Gnu
+Privacy Guard (GnuPG). GPA moÅ¼e byÄ‡ uÅ¼yte do szyfrowania,
+deszyfrowania i podpisywania plikÃ³w, do weryfikacji podpisÃ³w, oraz do
+zarzÄ…dzania zarÃ³wno publicznymi, jak i prywatnymi kluczami.
 
 %prep
 %setup -q
