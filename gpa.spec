@@ -1,5 +1,5 @@
 Summary:	Gnu Privacy Assistant - Graphical Frontend for the GnuPG
-Summary(pl.UTF-8):   Gnu Privacy Assistant - Graficzny Frontend GnuPG
+Summary(pl.UTF-8):	Gnu Privacy Assistant - Graficzny Frontend GnuPG
 Name:		gpa
 Version:	0.7.3
 Release:	1
