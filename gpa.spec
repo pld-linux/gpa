@@ -1,20 +1,22 @@
 Summary:	Gnu Privacy Assistant - Graphical Frontend for the GnuPG
 Summary(pl.UTF-8):	Gnu Privacy Assistant - Graficzny Frontend GnuPG
 Name:		gpa
-Version:	0.7.3
+Version:	0.7.5
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	ftp://ftp.gnupg.org/gcrypt/alpha/gpa/%{name}-%{version}.tar.bz2
-# Source0-md5:	a3626266f9dda506445c7297c4172a65
+# Source0-md5:	5b6191d08eaa506049f952d44b5c261d
 URL:		http://www.gnupg.org/related_software/gpa/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.9.3
 BuildRequires:	gettext-devel >= 0.12.1
-BuildRequires:	gpgme-devel >= 1:1.1.1
+BuildRequires:	gpgme-devel >= 1:1.1.3
 BuildRequires:	gtk+2-devel >= 2:2.2.0
 BuildRequires:	pkgconfig
 Requires:	gnupg
+Requires:	gpgme >= 1:1.1.3
+Requires:	gtk+2 >= 2:2.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
