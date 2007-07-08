@@ -34,6 +34,9 @@ zarządzania zarówno publicznymi, jak i prywatnymi kluczami.
 %setup -q
 
 %build
+GPG=%{_bindir}/gpg
+export GPG
+
 %{__gettextize}
 %{__aclocal} -I m4
 %{__autoconf}
