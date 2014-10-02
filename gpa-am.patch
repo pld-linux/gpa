@@ -1,11 +1,11 @@
---- gpa-0.9.4/configure.ac.orig	2013-05-07 21:24:33.235875192 +0200
-+++ gpa-0.9.4/configure.ac	2013-05-07 21:25:02.042540650 +0200
+--- gpa-0.9.5/configure.ac.orig	2014-10-02 21:07:10.715862848 +0200
++++ gpa-0.9.5/configure.ac	2014-10-02 21:08:48.555858742 +0200
 @@ -53,7 +53,7 @@
- NEED_GPGME_VERSION=1.2.0
+ NEED_GPGME_VERSION=1.5.0
  
- 
+ AC_CONFIG_AUX_DIR([build-aux])
 -AM_CONFIG_HEADER(config.h)
-+AC_CONFIG_HEADERS(config.h)
++AC_CONFIG_HEADERS([config.h])
  AC_CONFIG_SRCDIR(src/gpa.c)
  AM_INIT_AUTOMAKE($PACKAGE_NAME, $PACKAGE_VERSION)
  
