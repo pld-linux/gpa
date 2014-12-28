@@ -11,7 +11,7 @@ Patch0:		%{name}-am.patch
 URL:		http://www.gnupg.org/related_software/gpa/
 BuildRequires:	autoconf >= 2.61
 BuildRequires:	automake >= 1:1.10
-BuildRequires:	gettext-devel >= 0.18.1
+BuildRequires:	gettext-tools >= 0.18.1
 BuildRequires:	gpgme-devel >= 1:1.5.0
 BuildRequires:	gtk+2-devel >= 2:2.10.0
 BuildRequires:	libassuan-devel >= 1.1.0
