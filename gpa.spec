@@ -1,27 +1,28 @@
 Summary:	Gnu Privacy Assistant - Graphical Frontend for the GnuPG
 Summary(pl.UTF-8):	Gnu Privacy Assistant - Graficzny Frontend GnuPG
 Name:		gpa
-Version:	0.9.10
+Version:	0.10.0
 Release:	1
 License:	GPL v3+
 Group:		X11/Applications
 Source0:	ftp://ftp.gnupg.org/gcrypt/gpa/%{name}-%{version}.tar.bz2
-# Source0-md5:	743a26ac058a3f07c3a35cab52dae805
+# Source0-md5:	d0ee0086aea0ad1f61f81dae9a71c253
 Patch0:		%{name}-am.patch
 URL:		http://www.gnupg.org/related_software/gpa/
 BuildRequires:	autoconf >= 2.61
 BuildRequires:	automake >= 1:1.10
 BuildRequires:	gettext-tools >= 0.18.1
-BuildRequires:	gpgme-devel >= 1:1.5.0
+BuildRequires:	gpgme-devel >= 1:1.9.0
 BuildRequires:	gtk+2-devel >= 2:2.10.0
-BuildRequires:	libassuan-devel >= 1.1.0
-BuildRequires:	libgpg-error-devel >= 1.12
+BuildRequires:	libassuan-devel >= 1:2.4.2
+BuildRequires:	libgpg-error-devel >= 1.27
 BuildRequires:	pkgconfig
+BuildRequires:	zlib-devel
 Requires:	gnupg
-Requires:	gpgme >= 1:1.5.0
+Requires:	gpgme >= 1:1.9.0
 Requires:	gtk+2 >= 2:2.10.0
-Requires:	libassuan >= 1.1.0
-Requires:	libgpg-error >= 1.12
+Requires:	libassuan >= 1:2.4.2
+Requires:	libgpg-error >= 1.27
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -46,7 +47,8 @@ zarządzania zarówno publicznymi, jak i prywatnymi kluczami.
 %{__autoheader}
 %{__automake}
 %configure \
-	GPG=/usr/bin/gpg
+	GPG=/usr/bin/gpg \
+	--disable-silent-rules
 %{__make}
 
 %install
