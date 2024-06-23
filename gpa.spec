@@ -8,7 +8,7 @@ Group:		X11/Applications
 Source0:	ftp://ftp.gnupg.org/gcrypt/gpa/%{name}-%{version}.tar.bz2
 # Source0-md5:	d0ee0086aea0ad1f61f81dae9a71c253
 Patch0:		%{name}-am.patch
-URL:		http://www.gnupg.org/related_software/gpa/
+URL:		https://www.gnupg.org/related_software/gpa/
 BuildRequires:	autoconf >= 2.61
 BuildRequires:	automake >= 1:1.10
 BuildRequires:	gettext-tools >= 0.18.1
