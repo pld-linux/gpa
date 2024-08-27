@@ -5,7 +5,7 @@ Version:	0.10.0
 Release:	2
 License:	GPL v3+
 Group:		X11/Applications
-Source0:	ftp://ftp.gnupg.org/gcrypt/gpa/%{name}-%{version}.tar.bz2
+Source0:	https://www.gnupg.org/ftp/gcrypt/gpa/%{name}-%{version}.tar.bz2
 # Source0-md5:	d0ee0086aea0ad1f61f81dae9a71c253
 Patch0:		%{name}-am.patch
 URL:		https://www.gnupg.org/related_software/gpa/
