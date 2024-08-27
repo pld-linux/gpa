@@ -2,7 +2,7 @@ Summary:	Gnu Privacy Assistant - Graphical Frontend for the GnuPG
 Summary(pl.UTF-8):	Gnu Privacy Assistant - Graficzny Frontend GnuPG
 Name:		gpa
 Version:	0.10.0
-Release:	2
+Release:	3
 License:	GPL v3+
 Group:		X11/Applications
 Source0:	https://www.gnupg.org/ftp/gcrypt/gpa/%{name}-%{version}.tar.bz2
