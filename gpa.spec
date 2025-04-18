@@ -7,6 +7,7 @@ License:	GPL v3+
 Group:		X11/Applications
 Source0:	https://www.gnupg.org/ftp/gcrypt/gpa/%{name}-%{version}.tar.bz2
 # Source0-md5:	38ca404c6835059f952fb33d93fbf3d3
+Patch0:		%{name}-includes.patch
 URL:		https://www.gnupg.org/related_software/gpa/
 BuildRequires:	autoconf >= 2.61
 BuildRequires:	automake >= 1:1.10
@@ -36,6 +37,7 @@ zarządzania zarówno publicznymi, jak i prywatnymi kluczami.
 
 %prep
 %setup -q
+%patch -P0 -p1
 
 # use newer system versions
 %{__rm} m4/{gpg-error.m4,gpgme.m4,libassuan.m4}
